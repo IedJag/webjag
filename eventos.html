@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos - IED José Acevedo y Gómez</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+    <!--HEADER -->
+    <div class="header-container">
+    <img src="img/logo-jag.png" alt="Logo Colegio" class="logo-colegio" />
+<header>
+  <div class="header-contenido">
+    <h1 class="logo">IED José Acevedo y Gómez</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="directiva-y-docentes.html">Directiva y Docentes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+</div>
+
+
+
+
+  <!-- BANNER -->
+    <div class="banner-container">
+  <section class="banner banner-eventos">
+    <div class="banner-texto-e">
+    <h1><i class="fas fa-calendar-alt"></i>Eventos de la Institución</h1>
+    <p> EN DESAROLLO... </p>
+    </div>
+  </section>
+  <div class="division-banner"></div>
+    </div>
+
+
+    <!-- PROXIMOS EVENTOS -->
+
+   <section class="proximos-eventos">
+  <h2>Próximos eventos</h2>
+
+  <div class="evento">
+    <div class="fecha">
+      <span class="dia">4 y 6</span>
+      <span class="mes">Jun</span>
+    </div>
+    <div class="detalles">
+      <div class="info">
+        <i class="fas fa-palette"></i>
+        <strong>A tomarte el colegio</strong>
+      </div>
+      <span>Gym - ....</span>
+    </div>
+  </div>
+
+  <div class="evento">
+    <div class="fecha">
+      <span class="dia">6</span>
+      <span class="mes">May</span>
+    </div>
+    <div class="detalles">
+      <div class="info">
+        <i class="fas fa-futbol"></i>
+        <strong>Inauguración Mundial JAG 2025</strong>
+      </div>
+      <span>Patio</span>
+    </div>
+  </div>
+
+  <div class="evento">
+    <div class="fecha">
+      <span class="dia">20</span>
+      <span class="mes">Jun</span>
+    </div>
+    <div class="detalles">
+      <div class="info">
+        <i class="fas fa-flask"></i>
+        <strong>ECO 2025</strong>
+      </div>
+      <span>Patio</span>
+    </div>
+  </div>
+</section>
+
+
+    
+
+<!-- CARRUSEL GALERIA -->
+<section class="seccion-evento">
+  <h2>Eventos Recientes</h2>
+
+  <div class="carrusel-evento">
+    <button id="btn-anterior">&#10094;</button>
+
+    <img src="img/mundial/41mdl.JPG" alt="Evento 1" class="evento-slide activa">
+    <img src="img/atc/10atc.jpg" alt="Evento 2" class="evento-slide derecha">
+    <img src="img/atc/6atc.jpg" alt="Evento 3" class="evento-slide">
+
+    <button id="btn-siguiente">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+<!-- SCRIPT CARRUSEL GALERIA 1 -->
+<script>
+  const slidesEvento = document.querySelectorAll('.evento-slide');
+let indiceActivoEvento = 0;
+
+function actualizarCarruselEvento() {
+  slidesEvento.forEach((slide, i) => {
+    slide.classList.remove('izquierda', 'activa', 'derecha');
+    if (i === indiceActivoEvento) {
+      slide.classList.add('activa');
+    } else if (i === (indiceActivoEvento - 1 + slidesEvento.length) % slidesEvento.length) {
+      slide.classList.add('izquierda');
+    } else if (i === (indiceActivoEvento + 1) % slidesEvento.length) {
+      slide.classList.add('derecha');
+    }
+  });
+}
+
+function siguienteEvento() {
+  indiceActivoEvento = (indiceActivoEvento + 1) % slidesEvento.length;
+  actualizarCarruselEvento();
+}
+
+function anteriorEvento() {
+  indiceActivoEvento = (indiceActivoEvento - 1 + slidesEvento.length) % slidesEvento.length;
+  actualizarCarruselEvento();
+}
+
+document.getElementById('btn-anterior')?.addEventListener('click', anteriorEvento);
+document.getElementById('btn-siguiente')?.addEventListener('click', siguienteEvento);
+actualizarCarruselEvento();
+</script>
+
+
+<!-- GALERIA PREFABS -->
+
+<main>
+<section class="titulo-galeria">
+     <h3>Galería general de eventos</h3>
+    <p>Aquí encontrarás imágenes generales de eventos anteriores en la institución.</p>
+</section>
+ 
+
+
+
+ <section class="galeria-evento fondo-blanco">
+
+
+    <h3>INAUGURACIÓN MUNDIAL JAG 2025</h3>
+    <div class="galeria-eventos">
+   <img src="img/mundial/1mdl.JPG" alt="Mundial 1" />
+<video controls width="640">
+  <source src="img/mundial/2mdl.mp4" type="video/mp4">
+</video>
+
+<video controls width="640">
+  <source src="img/mundial/3mdl.MOV" type="video/mp4">
+</video>
+<video controls width="640">
+  <source src="img/mundial/4mdl.MOV" type="video/mp4">
+</video>
+<video controls width="640">
+  <source src="img/mundial/5mdl.MOV" type="video/mp4">
+</video>
+<img src="img/mundial/6mdl.JPG" alt="Mundial 6" />
+<img src="img/mundial/7mdl.JPG" alt="Mundial 7" />
+<img src="img/mundial/8mdl.JPG" alt="Mundial 8" />
+<img src="img/mundial/9mdl.JPG" alt="Mundial 9" />
+<img src="img/mundial/10mdl.JPG" alt="Mundial 10" />
+<img src="img/mundial/11mdl.JPG" alt="Mundial 11" />
+<img src="img/mundial/12mdl.JPG" alt="Mundial 12" />
+<img src="img/mundial/13mdl.JPG" alt="Mundial 13" />
+<img src="img/mundial/14mdl.JPG" alt="Mundial 14" />
+<img src="img/mundial/15mdl.JPG" alt="Mundial 15" />
+<img src="img/mundial/16mdl.JPG" alt="Mundial 16" />
+<img src="img/mundial/17mdl.JPG" alt="Mundial 17" />
+<img src="img/mundial/18mdl.JPG" alt="Mundial 18" />
+<img src="img/mundial/19mdl.JPG" alt="Mundial 19" />
+<img src="img/mundial/20mdl.JPG" alt="Mundial 20" />
+<img src="img/mundial/21mdl.JPG" alt="Mundial 21" />
+<img src="img/mundial/22mdl.JPG" alt="Mundial 22" />
+<img src="img/mundial/23mdl.JPG" alt="Mundial 23" />
+<img src="img/mundial/24mdl.JPG" alt="Mundial 24" />
+<img src="img/mundial/25mdl.JPG" alt="Mundial 25" />
+<img src="img/mundial/26mdl.JPG" alt="Mundial 26" />
+<img src="img/mundial/27mdl.JPG" alt="Mundial 27" />
+<img src="img/mundial/28mdl.JPG" alt="Mundial 28" />
+<img src="img/mundial/29mdl.JPG" alt="Mundial 29" />
+<img src="img/mundial/30mdl.JPG" alt="Mundial 30" />
+<img src="img/mundial/31mdl.JPG" alt="Mundial 31" />
+<img src="img/mundial/32mdl.JPG" alt="Mundial 32" />
+<img src="img/mundial/33mdl.JPG" alt="Mundial 33" />
+<img src="img/mundial/34mdl.JPG" alt="Mundial 34" />
+<img src="img/mundial/35mdl.JPG" alt="Mundial 35" />
+<img src="img/mundial/36mdl.JPG" alt="Mundial 36" />
+<img src="img/mundial/37mdl.JPG" alt="Mundial 37" />
+<img src="img/mundial/38mdl.JPG" alt="Mundial 38" />
+<img src="img/mundial/39mdl.JPG" alt="Mundial 39" />
+<img src="img/mundial/40mdl.JPG" alt="Mundial 40" />
+<img src="img/mundial/41mdl.JPG" alt="Mundial 41" />
+<img src="img/mundial/42mdl.JPG" alt="Mundial 42" />
+<img src="img/mundial/43mdl.JPG" alt="Mundial 43" />
+<img src="img/mundial/44mdl.JPG" alt="Mundial 44" />
+<img src="img/mundial/45mdl.JPG" alt="Mundial 45" />
+<img src="img/mundial/46mdl.JPG" alt="Mundial 46" />
+<img src="img/mundial/47mdl.JPG" alt="Mundial 47" />
+<img src="img/mundial/48mdl.JPG" alt="Mundial 48" />
+<img src="img/mundial/49mdl.JPG" alt="Mundial 49" />
+<img src="img/mundial/50mdl.JPG" alt="Mundial 50" />
+<img src="img/mundial/51mdl.JPG" alt="Mundial 51" />
+<img src="img/mundial/52mdl.JPG" alt="Mundial 52" />
+<img src="img/mundial/53mdl.JPG" alt="Mundial 53" />
+<img src="img/mundial/54mdl.JPG" alt="Mundial 54" />
+<img src="img/mundial/55mdl.JPG" alt="Mundial 55" />
+<img src="img/mundial/56mdl.JPG" alt="Mundial 56" />
+<img src="img/mundial/57mdl.JPG" alt="Mundial 57" />
+<img src="img/mundial/58mdl.JPG" alt="Mundial 58" />
+<img src="img/mundial/59mdl.JPG" alt="Mundial 59" />
+<img src="img/mundial/60mdl.JPG" alt="Mundial 60" />
+<img src="img/mundial/61mdl.JPG" alt="Mundial 61" />
+<img src="img/mundial/62mdl.JPG" alt="Mundial 62" />
+<img src="img/mundial/63mdl.JPG" alt="Mundial 63" />
+<img src="img/mundial/64mdl.MOV" alt="Mundial 64" />
+<img src="img/mundial/65mdl.MOV" alt="Mundial 65" />
+<img src="img/mundial/66mdl.MOV" alt="Mundial 66" />
+<img src="img/mundial/67mdl.MOV" alt="Mundial 67" />
+<img src="img/mundial/68mdl.MOV" alt="Mundial 68" />
+
+    </div>
+    <button class="ver-mas-btn">Ver más</button>
+  </section>
+
+<section class="descarga-videos">
+  <h3>¿Quieres ver los videos de la inauguración?</h3>
+  <p>Puedes descargarlos aquí los videos de las entradas de cada pais y verlos cuando desees.</p>
+  
+  <div class="botones-videos">
+    <a href="https://drive.google.com/file/d/1SrZa6YvR_JGJnvf5bdCb4Gqu6WUEWBpR/view?usp=sharing" class="btn-descargar" download>Alemania</a>
+    <a href="https://drive.google.com/file/d/1y4APyR9TtuwrZqiEmIZkuNtBC4SZi-fw/view?usp=sharing" class="btn-descargar" download>Argentina</a>
+ <a href="https://drive.google.com/file/d/1Fqr611VKwi-4CEK3opDpxYMjY--OAVCx/view?usp=sharing" class="btn-descargar" download>Brasil</a>
+ <a href="https://drive.google.com/file/d/11_cFxR9sggICjBtPc0P4_q5cXNhwKTn0/view?usp=sharing" class="btn-descargar" download>Colombia</a>
+ <a href="https://drive.google.com/file/d/17HuF_OtRLEyr0lQgSTHGUFNPHbuNqqXM/view?usp=sharing" class="btn-descargar" download>Francia</a>
+ <a href="https://drive.google.com/file/d/15wf-gcWalgiJC8a8F5s9phubl0oclIgI/view?usp=sharing" class="btn-descargar" download>General</a>
+ <a href="https://drive.google.com/file/d/1Iu6KtZZ8kS8lCfT2MMDTTMRu0A31lnzr/view?usp=sharing" class="btn-descargar" download>Preparación </a>
+
+
+
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="galeria-evento fondo-amarillo">
+  <h3>A TOMARTE EL COLEGIO</h3>
+  <p>Mini evento realizado en la institución por parte del area de Artes con diferentes actividades para tomar el colegio</p>
+  <div class="galeria-eventos">
+    <img src="img/atc/1atc.jpg" alt="Día del estudiante 1" />
+    <img src="img/atc/2atc.jpg" alt="Día del estudiante 2" />
+    <img src="img/atc/3atc.jpg" alt="Día del estudiante 3" />
+    <img src="img/atc/4atc.jpg" alt="Día del estudiante 4" />
+    <img src="img/atc/5atc.jpg" alt="Día del estudiante 5" />
+    <img src="img/atc/6atc.jpg" alt="Día del estudiante 6" />
+    <img src="img/atc/7atc.jpg" alt="Día del estudiante 7" />
+    <img src="img/atc/8atc.jpg" alt="Día del estudiante 8" />
+    <img src="img/atc/9atc.jpg" alt="Día del estudiante 9" />
+    <img src="img/atc/10atc.jpg" alt="Día del estudiante 10" />
+    <img src="img/atc/11atc.jpg" alt="Día del estudiante 11" />
+   
+  </div>
+  <button class="ver-mas-btn">Ver más</button>
+</section>
+
+
+
+
+
+  <!-- Seccion Evento (fondo blanco) -->
+  <section class="galeria-evento fondo-blanco">
+
+    <h3>GESTIONARTE 2024</h3>
+    <div class="galeria-eventos">
+      <img src="img/gestionarte24/gs1-2024.jpg" alt="Evento 1" />
+      <img src="img/gestionarte24/gs2-2024.jpg" alt="Evento 2" />
+      <img src="img/gestionarte24/gs3-2024.jpg" alt="Evento 3" />
+      <img src="img/gestionarte24/gs4-2024.jpg" alt="Evento 4" />
+      <img src="img/gestionarte24/gs5-2024.jpg" alt="Evento 5" />
+      <img src="img/gestionarte24/gs6-2024.jpg" alt="Evento 6" />
+      <img src="img/gestionarte24/gs7-2024.jpg" alt="Evento 6" />
+      <img src="img/gestionarte24/gs8-2024.jpg" alt="Evento 6" />
+    </div>
+    <button class="ver-mas-btn">Ver más</button>
+  </section>
+
+  <!-- Sección evento (fondo amarillo) -->
+<section class="galeria-evento fondo-amarillo">
+  <h3>CABALGATA 2023</h3>
+  <p>Evento de la ''CABALGATA'' realizado en el velodromo con actividades recreativas y culturales.</p>
+  <div class="galeria-eventos">
+    <img src="img/cabalgata19/1c2023.jpg" alt="Día del estudiante 1" />
+    <img src="img/cabalgata19/2c2023.jpg" alt="Día del estudiante 2" />
+    <img src="img/cabalgata19/3c2023.jpg" alt="Día del estudiante 3" />
+    <img src="img/cabalgata19/4c2023.jpg" alt="Día del estudiante 4" />
+    <img src="img/cabalgata19/5c2023.jpg" alt="Día del estudiante 5" />
+    <img src="img/cabalgata19/6c2023.jpg" alt="Día del estudiante 6" />
+    <img src="img/cabalgata19/7c2023.jpg" alt="Día del estudiante 7" />
+    <img src="img/cabalgata19/8c2023.jpg" alt="Día del estudiante 8" />
+    <img src="img/cabalgata19/9c2023.jpg" alt="Día del estudiante 9" />
+    <img src="img/cabalgata19/10c2023.jpg" alt="Día del estudiante 10" />
+    <img src="img/cabalgata19/11c2023.jpg" alt="Día del estudiante 11" />
+    <img src="img/cabalgata19/12c2023.jpg" alt="Día del estudiante 12" />
+    <img src="img/cabalgata19/13c2023.jpg" alt="Día del estudiante 13" />
+    <img src="img/cabalgata19/14c2023.jpg" alt="Día del estudiante 14" />
+    <img src="img/cabalgata19/15c2023.jpg" alt="Día del estudiante 15" />
+    <img src="img/cabalgata19/16c2023.jpg" alt="Día del estudiante 16" />
+    <img src="img/cabalgata19/17c2023.jpg" alt="Día del estudiante 17" />
+    <img src="img/cabalgata19/18c2023.jpg" alt="Día del estudiante 18" />
+    <img src="img/cabalgata19/19c2023.jpg" alt="Día del estudiante 19" />
+    <img src="img/cabalgata19/20c2023.jpg" alt="Día del estudiante 20" />
+  </div>
+  <button class="ver-mas-btn">Ver más</button>
+</section>
+
+
+
+
+    <section class="galeria-evento fondo-blanco">
+    <h3>Eventos Antiguos...</h3>
+    <p>(Imagenes usadas para prueba)</p>
+    <div class="galeria-eventos">
+      <img src="img/gestionarte24/gs1-2024.jpg" alt="Evento 1" />
+      <img src="img/gestionarte24/gs2-2024.jpg" alt="Evento 2" />
+      <img src="img/gestionarte24/gs3-2024.jpg" alt="Evento 3" />
+      <img src="img/gestionarte24/gs4-2024.jpg" alt="Evento 4" />
+      <img src="img/gestionarte24/gs5-2024.jpg" alt="Evento 5" />
+      <img src="img/gestionarte24/gs6-2024.jpg" alt="Evento 6" />
+      <img src="img/gestionarte24/gs7-2024.jpg" alt="Evento 6" />
+      <img src="img/gestionarte24/gs8-2024.jpg" alt="Evento 6" />
+    </div>
+    <button class="ver-mas-btn">Ver más</button>
+  </section>
+
+<!-- SE AÑADEN MAS SECCIONES DE EVENTOS -->
+
+
+
+
+
+
+  <!-- 🔍 Modal para ambas galerías -->
+<div id="modal-imagen" class="modal">
+  <span class="cerrar">&times;</span>
+  <div class="modal-contenedor">
+    <img class="modal-contenido" id="img-modal" />
+    <div id="caption"></div>
+  </div>
+</div>
+
+
+
+  <div class="volver-container">
+  <a href="index.html" class="btn-volver">← Volver a la página principal</a>
+</div>
+
+</main>
+
+
+
+  <!-- SCRIPT GALERIA ABRIR Y CERRAR --> 
+<script>
+  const modal = document.getElementById('modal-imagen');
+  const modalImg = document.getElementById('img-modal');
+  const caption = document.getElementById('caption');
+  const cerrar = document.querySelector('.cerrar');
+
+  document.querySelectorAll('.galeria-eventos img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.classList.add('activo');
+      modalImg.src = img.src;
+      caption.textContent = img.alt || '';
+    });
+  });
+
+  cerrar.addEventListener('click', () => {
+    modal.classList.remove('activo');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('activo');
+    }
+  });
+</script>
+
+
+<!-- SCRIPT EXPANDIR Y MINIMIZAR -->
+<script>
+  document.querySelectorAll('.galeria-eventos').forEach(galeria => {
+    const imagenes = galeria.querySelectorAll('img');
+    imagenes.forEach((img, index) => {
+      if (index < 5) img.classList.add('mostrar');
+    });
+  });
+
+  document.querySelectorAll('.ver-mas-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const galeria = btn.previousElementSibling;
+      const imagenes = galeria.querySelectorAll('img');
+      const expandida = galeria.classList.toggle('expandidas');
+
+      if (expandida) {
+        imagenes.forEach(img => img.classList.add('mostrar'));
+        btn.textContent = 'Ver menos';
+      } else {
+        imagenes.forEach((img, index) => {
+          img.classList.toggle('mostrar', index < 5);
+        });
+        btn.textContent = 'Ver más';
+      }
+    });
+  });
+</script>
+
+
+
+
+<!-- FOOTER  -->
+  <footer>
+    <p>&copy; 2025 Dilan Camacho. Todos los derechos reservados.</p>
+  </footer>
+
+
+
+
+  <!-- MENÚ MOVILES -->
+<div class="menu-hamburguesa">
+  <button id="btn-menu">☰</button>
+  <nav id="nav-movil" class="oculto">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Sobre la Institución</a></li>
+      <li><a href="directiva-y-docentes-html">Directiva y Docentes</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+  <!-- Scripts Externos -->
+<script src="js/animaciones.js" defer></script>
+<script src="js/movil-tools.js" defer></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,291 @@
+{
+  "directivos": [
+    {
+      "nombre": "Miguel Medina",
+      "cargo": "Rector",
+      "sede": "Sede A y B",
+      "foto": "img/logo-jag.png"
+    },
+    {
+      "nombre": "Marcela Bogotá",
+      "cargo": "Coordinadora Sede A",
+      "sede": "Sede A",
+      "foto": "img/logo-jag.png"
+    },
+    {
+      "nombre": "Fernando Larrota",
+      "cargo": "Coordinador Sede B",
+      "sede": "Sede B",
+      "foto": "img/logo-jag.png"
+    },
+     {
+      "nombre": "Vanessa Rodriguez",
+      "cargo": "Orientación Sede A",
+      "sede": "Sede A",
+      "foto": "img/logo-jag.png"
+    },
+     {
+      "nombre": "Rocio Dorado",
+      "cargo": "Orientación Sede A y B",
+      "sede": "Sede B",
+      "foto": "img/logo-jag.png"
+    },
+     {
+      "nombre": "Monica Acosta",
+      "cargo": "Inclusión Sede A y B",
+      "sede": "Sede A - B",
+      "foto": "img/logo-jag.png"
+    }
+  ],
+ 
+
+  "docentes": {
+    "sedeA": {
+      "Área Matemáticas": [
+        {
+          "nombre": "Anderson Pardo",
+          "materia": "Estadistica - Saber Matematicas (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+        {
+          "nombre": "Cesar Pérez",
+          "materia": "Matemáticas (6° a 8°) - Geometria (9° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+         {
+          "nombre": "Pablo Robles",
+          "materia": "Geometria (6° a 8°) - Matemáticas (9° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Jhonny Silva",
+          "materia": "Tecnología e Informática (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Henry",
+          "materia": "Educación Física (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        }
+      ],
+      "Área Humanidades": [
+        {
+          "nombre": "Jazmin Ramirez",
+          "materia": "Lengua Castellana (6° y 7°) - Inglés (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Sandra Soto",
+          "materia": "Lengua Castellana (8° y 10°) - Inglés (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Monica Sanchez",
+          "materia": "Leo - Saber Lenguaje (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Julian Soler",
+          "materia": "Lengua Castellana (9° y 11°) - Inglés (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        }
+      ],
+      "Área Sociales": [
+           {
+          "nombre": "Luis Roldan",
+          "materia": "Saber Sociales - Filosofía (10° y 11°)",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Andrés Ávila",
+          "materia": "Sociales e Historia (6° a 9°)",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Maria Jose Lopez",
+          "materia": "Etica y Religión (6° a 11°) - Economía y Politica (10° y 11°)",
+          "foto": "img/logo-jag.png"
+        }
+  
+        ],
+        "Área Ciencias": [
+             {
+          "nombre": "Ricardo Infante",
+          "materia": "Biología (6° a 9°) - Saber Ciencias (8° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Angelica Gómez",
+          "materia": "Física (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Gina Torres",
+          "materia": "Química (6° a 11°) - Saber Ciencias (6° y 7°",
+          "foto": "img/logo-jag.png"
+        }
+        ],
+        "Área Artes": [
+            {
+          "nombre": "John Heber Sanchez",
+          "materia": "Cultura Festiva (6° a 11°)",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Julian Bedoya",
+          "materia": "Danzas (6° a 11°) - Media Técnica Escenicas",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Liliana Ramos",
+          "materia": "Artes Plásticas (6° a 11°) - Media Técnica Pláticas",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Shirley Zamora",
+          "materia": "Teatro (6° a 11°) - Media Técnica Escenicas",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Diego Castaño",
+          "materia": "Audiovisuales (6° a 11°) - Media Técnica Audiovisuales",
+          "foto": "img/logo-jag.png"
+        },
+          {
+          "nombre": "Jeisson Figueroa",
+          "materia": "Música (6° a 11°) - Media Técnica Música",
+          "foto": "img/logo-jag.png"
+        }
+        ]
+
+    },
+
+    "sedeB": {
+      "Preescolar": [
+        {
+          "nombre": "Nelly Bermudes",
+          "materia": "Preescolar",
+          "foto": "img/logo-jag.png"
+        },
+         {
+          "nombre": "Cristina Rojas",
+          "materia": "Preescolar",
+          "foto": "img/logo-jag.png"
+        },
+         {
+          "nombre": "Pilar Moreno",
+          "materia": "Preescolar",
+          "foto": "img/logo-jag.png"
+        },
+         {
+          "nombre": "Liliana Vazques",
+          "materia": "Preescolar",
+          "foto": "img/logo-jag.png"
+        },
+         {
+          "nombre": "Nathaly Rodriguez",
+          "materia": "Preescolar",
+          "foto": "img/logo-jag.png"
+        }
+      ],
+      "Primaria": [
+        {
+          "nombre": "Yiseli Hernández",
+          "materia": "1° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Maribel Rodriguez",
+          "materia": "1° Básica",
+          "foto": "img/logo-jag.png"
+        },
+        {
+          "nombre": "Marcela Dominguez",
+          "materia": "2° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Lucrecia Daza",
+          "materia": "2° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Martha Garcia",
+          "materia": "3° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Nelcy Gutierrez",
+          "materia": "3° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Paula Rodriguez",
+          "materia": "4° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Omaira Pérez",
+          "materia": "4° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Viviana Rodriguez",
+          "materia": "5° Básica",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Vladimir Quintero",
+          "materia": "5° Básica",
+          "foto": "img/logo-jag.png"
+        }
+      ],
+      "Asignaturas Adicionales": [
+        {
+          "nombre": "John Rodriguez",
+          "materia": "Educación Física",
+          "foto": "img/logo-jag.png"
+        },
+        {
+          "nombre": "Carolina Gómez",
+          "materia": "Inglés",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Martha Jimenez",
+          "materia": "Saber Lenguaje",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "Laura Osorio",
+          "materia": "Saber Matemáticas",
+          "foto": "img/logo-jag.png"
+        },
+           {
+          "nombre": "John Parrado",
+          "materia": "Música",
+          "foto": "img/logo-jag.png"
+        }
+      ]
+    }
+  },
+  "administrativos": [
+    {
+      "nombre": "Guillermo Ortiz",
+      "cargo": "Secretaria",
+      "foto": "img/logo-jag.png"
+    },
+    {
+      "nombre": "Elizeth Ruiz",
+      "cargo": "Almacenista",
+      "foto": "img/logo-jag.png"
+    },
+    {
+      "nombre": "Robinson Cortes",
+      "cargo": "Funciones Financieras",
+      "foto": "img/logo-jag.png"
+    }
+  ]
+}
+
+

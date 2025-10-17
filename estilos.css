@@ -808,9 +808,9 @@ body.historia {
 /* Sección detallada de historia - Html */
 .banner-historia {
   height: 400px;
-  background-image: url('img/fondoo-colegio.jpg'); /* Cambia la ruta si es necesario */
+  background-image: url('img/pasillo.JPG'); /* Cambia la ruta si es necesario */
   background-size: cover;
-  background-position: center 5%; /* O ajusta la posición a tu gusto */
+  background-position: center 40%; /* O ajusta la posición a tu gusto */
   position: relative;
   color: white;
   display: flex;

@@ -88,5 +88,15 @@ actualizarCarruselPrincipal();
 
 
 
+// --- DESPLEGABLES DE ÁREAS ---
+document.querySelectorAll('.area-card .area-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const card = header.parentElement;
+    card.classList.toggle('activa');
 
+    const icon = header.querySelector('.toggle-btn i');
+    icon.classList.toggle('fa-chevron-down');
+    icon.classList.toggle('fa-chevron-up');
+  });
+});
 

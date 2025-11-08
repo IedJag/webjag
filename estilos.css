@@ -397,6 +397,154 @@ section {
 
 
 
+/* === SECCIÓN STUDDY APP === */
+.studdy-app {
+  background-color: #ffeb3b;
+  color: #000;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.studdy-app h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.studdy-app p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.btn-studdy {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-studdy:hover {
+  background-color: #333;
+}
+
+/* === SECCIÓN ENLACES DE INTERÉS === */
+.enlaces-interes {
+  background-color: #ffeb3b;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.enlaces-interes h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.contenedor-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contenedor-enlaces a {
+  background-color: #fff;
+  border: 2px solid #ffeb3b;
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+  width: 180px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.contenedor-enlaces a i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+}
+
+.contenedor-enlaces a:hover {
+  transform: translateY(-5px);
+  background-color: #979692;
+  color: #000;
+}
+
+/* === SECCIÓN CONTACTO === */
+.contacto {
+  background-color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.contacto-info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.contacto-info p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 1.1em;
+}
+
+.contacto-info i {
+  color: #ffeb3b;
+  margin-right: 10px;
+}
+
+.contacto-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contacto-info a:hover {
+  text-decoration: underline;
+}
+
+.contacto-mapa img {
+  max-width: 400px;
+  border: 3px solid #ffeb3b;
+  border-radius: 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .contenedor-enlaces a {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contacto-mapa img {
+    width: 100%;
+  }
+}
+
 
 
 
@@ -786,6 +934,171 @@ section {
 
 
 /* PÁGINA HISTORIA */
+
+
+
+/* --- INFORMACIÓN INSTITUCIONAL --- */
+.institucional-info {
+  padding: 60px 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.institucional-info h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.tarjetas-institucionales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  background-color: #ffe600;
+}
+
+
+/* --- PROYECTOS POR ÁREAS --- */
+.proyectos-areas {
+  background-color: #f7f7f7;
+  padding: 60px 10%;
+}
+
+.proyectos-areas h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.proyectos-areas .intro-areas {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.contenedor-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.area-card {
+  background-color: #fff;
+  border: 2px solid #ffeb3b;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.area-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.area-header i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.area-header h3 {
+  flex: 1;
+  text-align: left;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.area-contenido {
+  display: none;
+  padding: 20px;
+  color: #333;
+  animation: fadeIn 0.3s ease;
+}
+
+.area-card.activa .area-contenido {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tarjetas-institucionales {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-header h3 {
+    font-size: 1em;
+  }
+}
+
+
+.lista-actividades {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.lista-actividades li {
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  border-left: 4px solid #f7c600;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.lista-actividades li strong {
+  display: block;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.lista-actividades li p {
+  margin: 0;
+  color: #444;
+  line-height: 1.4;
+}
+
+
+
+
 
 body.historia {
   background-color: #c2c0c0; /* gris claro, elegante */

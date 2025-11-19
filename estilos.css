@@ -2178,7 +2178,7 @@ body.historia {
 .banner-docentes {
   position: relative;
   height: 450px; /* Puedes subirlo a 500px si quieres igualar el principal */
-  background-image: url("img/fondo-dyd.png"); /* CAMBIA ESTA IMAGEN */
+  background-image: url("img/mural-colegio.jpg"); /* CAMBIA ESTA IMAGEN */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
